@@ -25,6 +25,29 @@ g++ main.cpp functions.cpp includes/md5.cpp includes/sha1.cpp includes/sha256.cp
 ./programa
 ```
 
+## Eksperimentinis tyrimas-analizė
+* ### Palyginame dviejų inputų gaunamus hex'us, žiūrime ar jie skirtingi:
+![image](https://user-images.githubusercontent.com/78842398/152878215-cd0a0bed-f1e1-441a-9926-34f27c9c9ce8.png)
+* ### Tikriname dviejų vienodų inputų gaunamus rezultatus, žiūrime, ar jie vienodi:
+```
+Your input: qwertyuiop. c8dafbcc40445193711dddfbc5635d77fc4d71660c4c09bd771e8574c8c8aae6
+```
+ #### Iš naujo paleidžiame programą ir įvedame tokį patį tekstą, žiūrime į rezultatus:
+```
+Your input: qwertyuiop. c8dafbcc40445193711dddfbc5635d77fc4d71660c4c09bd771e8574c8c8aae6
+```
+![image](https://user-images.githubusercontent.com/78842398/152880685-9b8fff38-d5c9-4495-8876-d694f65cdfd7.png)
+
+* ### Tikriname, ar maišos funkcija tenkina "Avalanche effect":
+
+![image](https://user-images.githubusercontent.com/78842398/152880974-9c8bb57b-30b3-4e40-b755-94848800037f.png)
+
+
+
+
+
+
+
 
 
 
