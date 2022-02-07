@@ -58,6 +58,17 @@ Average difference in pairs:   93.8%   50.1%
 ```
 
 ## Išvada
+Pabaigus darbą atrodė kad viskas kaip ir veikia teisingai taip kaip ir turėtų, tačiau vis dėlto išlindo kritinių klaidų kurių taip ir nepavyko ištaisyti, kaip:
+* Atliekant testus su kitais hash'inimo algoritmais, SHA-256 sugebėdavo būt spartesnis už MD5, tačiau atliekant dar vieną testą kol rašiau šią išvadą, rezultatai vėl buvo skirtingi
+```
+Custom hash time: 0.005s.
+Md5 hash time: 0.006s.
+Sha1 hash time: 0.009s.
+Sha256 hash time: 0.008s.
+```
+* Vykdant "kolizijos" testus, beveik visada atsirasdavo bent vienas collision 
+``` Collisions: 1 out of 100 000 tests ```
+* Sulūžo skaitymas iš failų
 
 
 
